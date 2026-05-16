@@ -59,6 +59,41 @@
             }
         }
     </style>
+    <!-- KODE PENGAMAN -->
+<style>
+/* Cegah Salin Teks & Pilih Teks */
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Cegah Klik Kanan pada Gambar */
+img {
+    pointer-events: none;
+}
+</style>
+
+<script>
+// Cegah Klik Kanan di Seluruh Halaman
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    return false;
+});
+
+// Cegah Tombol Pintas Salin/Cetak
+document.addEventListener('keydown', function(e) {
+    // Ctrl+C, Ctrl+U, Ctrl+S, Ctrl+P, F12
+    if (
+        (e.ctrlKey && ['c', 'u', 's', 'p'].includes(e.key.toLowerCase())) ||
+        e.key === 'F12'
+    ) {
+        e.preventDefault();
+        return false;
+    }
+});
+</script>
 </head>
 <body class="bg-gradient-to-br from-gelap via-purple-950 to-pink-950 text-white min-h-screen scroll-smooth">
 
