@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.O.B TEAM | Mobile Legends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        utama: '#581C87',
+                        merah: '#991B1B',
+                        pink: '#EC4899',
+                        gelap: '#09090B',
+                        kartu: '#18181B',
+                        jungler: '#DC2626',
+                        gold: '#EAB308',
+                        roam: '#3B82F6',
+                        exp: '#EC4899',
+                        mid: '#A855F7',
+                    },
+                    fontFamily: {
+    sans: ['Oxanium', 'ui-sans-serif', 'Arial', 'Helvetica', 'sans-serif'],
+},
+
+
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+    
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #9D00FF, #FF1CF0, #FF40C8);
+    filter: brightness(1.3) drop-shadow(0 0 10px #C840FF) drop-shadow(0 0 20px #FF40F0);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+    
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .text-shadow { text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+            .bg-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+            .scroll-smooth { scroll-behavior: smooth; }
+            .gradient-text {
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: linear-gradient(to right, #A855F7, #EC4899, #DC2626);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gelap via-purple-950 to-pink-950 text-white min-h-screen scroll-smooth">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full top-0 left-0 z-50 bg-blur bg-black/50 border-b border-pink-500/30 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="IMG_20260516_112539.jpg" alt="Logo ML" class="h-12 w-12 rounded-full border-2 border-pink-500 shadow-[0_0_20px_rgba(236,72,153,0.4)]">
+                <h1 class="text-xl md:text-2xl font-bold gradient-text tracking-wider">K.O.B TEAM</h1>
+            </div>
+            <a href="https://chat.whatsapp.com/DCYrEI4JsdBL7YV2iex4VM" target="_blank" class="bg-pink-600 hover:bg-pink-700 transition-all px-5 py-2 rounded-lg font-semibold shadow-lg hover:scale-105">
+                <i class="fa fa-whatsapp mr-2"></i> Minta BerGabung😘
+            </a>
+        </div>
+    </nav>
+
+    <!-- Bagian Utama -->
+    <section class="pt-32 pb-20 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute top-20 left-1/4 w-80 h-80 bg-purple-600 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-1/4 w-80 h-80 bg-pink-600 rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto relative z-10">
+            <h2 class="text-[clamp(2.5rem,6vw,5rem)] font-extrabold leading-tight text-shadow">
+                SELAMAT DATANG DI<br><span class="bg-gradient-to-r from-[#FF0CF0] to-[#FF1CF0] bg-clip-text text-transparent drop-shadow-[0_0_8px_#B826FF] drop-shadow-[0_0_15px_#FF2EFB] font-bold">WEBSITE DARI TIM K.O.B</span>
+
+            </h2>
+            <p class="text-lg md:text-xl text-pink-200/80 max-w-3xl mx-auto mt-4">
+                Grup paling solid, kompak, dan siap menaklukkan Land of Dawn!🤪
+            </p>
+            <a href="#anggota" class="inline-block mt-10 bg-white/10 border border-pink-500/30 px-8 py-3 rounded-full text-lg font-semibold hover:bg-pink-500/20 transition-all">
+                Lihat Anggota <i class="fa fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Bagian Tombol Role & Daftar Anggota -->
+    <section id="anggota" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Role Yg Diisi:</h2>
+
+            <div id="wadah-utama">
+                <!-- MENU AWAL: TOMBOL ROLE -->
+                <div id="menu-role" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+                    
+                    <!-- Tombol Jungler -->
+                    <button onclick="tampilkanAnggota('JUNGLER')" class="bg-kartu/80 border-2 border-jungler/50 rounded-xl p-6 hover:bg-red-900/30 hover:border-jungler transition-all transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-2xl font-bold text-red-500 mb-2 flex items-center justify-center gap-2">
+                            <i class="fa fa-paw text-3xl"></i> JUNGLER
+                        </h3>
+                        <p class="text-slate-300 text-sm">Penguasa Buff and Creep & Sang Pembunuh Mm</p>
+                    </button>
+
+                    <!-- Tombol Gold Laner -->
+                    <button onclick="tampilkanAnggota('GOLD LANER')" class="bg-kartu/80 border-2 border-amber-500/50 rounded-xl p-6 hover:bg-amber-900/30 hover:border-amber-500 transition-all transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-2xl font-bold text-amber-500 mb-2 flex items-center justify-center gap-2">
+                            <i class="fa fa-money text-3xl"></i> GOLD LANER
+                        </h3>
+                        <p class="text-slate-300 text-sm">Sumber Kerusakan Utama</p>
+                    </button>
+
+                    <!-- Tombol Roamer -->
+                    <button onclick="tampilkanAnggota('ROAMER')" class="bg-kartu/80 border-2 border-sky-500/50 rounded-xl p-6 hover:bg-sky-900/30 hover:border-sky-500 transition-all transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-2xl font-bold text-sky-500 mb-2 flex items-center justify-center gap-2">
+                            <i class="fa fa-shield text-3xl"></i> ROAMER
+                        </h3>
+                        <p class="text-slate-300 text-sm">Pelindung & Penyelamat</p>
+                    </button>
+
+                    <!-- Tombol EXP Laner -->
+                    <button onclick="tampilkanAnggota('EXP LANER')" class="bg-kartu/80 border-2 border-pink-500/50 rounded-xl p-6 hover:bg-pink-900/30 hover:border-pink-500 transition-all transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-2xl font-bold text-pink-500 mb-2 flex items-center justify-center gap-2">
+                            <i class="fa fa-hand-rock-o text-3xl"></i> EXP LANER
+                        </h3>
+                        <p class="text-slate-300 text-sm">Otot & Tembok Tim</p>
+                    </button>
+
+                    <!-- Tombol Mid Laner -->
+                    <button onclick="tampilkanAnggota('MID LANER')" class="bg-kartu/80 border-2 border-purple-500/50 rounded-xl p-6 hover:bg-purple-900/30 hover:border-purple-500 transition-all transform hover:scale-105 hover:shadow-lg">
+                        <h3 class="text-2xl font-bold text-purple-500 mb-2 flex items-center justify-center gap-2">
+                            <i class="fa fa-dot-circle-o text-3xl"></i> MID LANER
+                        </h3>
+                        <p class="text-slate-300 text-sm">Pengendali Peta</p>
+                    </button>
+                </div>
+
+                <!-- BAGIAN TAMPIL ANGGOTA -->
+                <div id="daftar-anggota" class="hidden max-w-6xl mx-auto">
+                    <!-- Tombol Kembali -->
+                    <button onclick="kembaliKeMenu()" class="mb-8 bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-lg font-bold transition-all flex items-center gap-2 shadow-lg">
+                        <i class="fa fa-arrow-left"></i> KEMBALI KE DAFTAR ROLE
+                    </button>
+
+                    <!-- Judul Role yang Dipilih -->
+                    <h3 id="judul-role" class="text-3xl font-bold text-center mb-8 gradient-text"></h3>
+
+                    <!-- Wadah Kartu Anggota -->
+                    <div id="wadah-kartu" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tampilan Awal: Semua Anggota -->
+    <section class="px-4 pb-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-pink-400">👤 SEMUA ANGGOTA GRUP</h2>
+            <div id="tampilan-awal" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 md:gap-4 max-w-6xl mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/60 border-t border-pink-900/50 py-8 px-4 text-center">
+        <p class="text-pink-300/70">© 2026 Grup Mobile Legends | Dibuat Oleh Yobsz</p>
+        <a href="https://chat.whatsapp.com/DCYrEI4JsdBL7YV2iex4VM" target="_blank" class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-6 py-2 rounded-full font-semibold transition-all">
+            <i class="fa fa-whatsapp mr-2"></i> Join? Cht Admin/Minta Gabung
+        </a>
+    </footer>
+
+    <script>
+        // === DATA ANGGOTA ===
+        const dataAnggota = [
+            {
+                role: "JUNGLER",
+                daftar: [
+                    { nama: "Yobsz", foto: "IMG-20260510-WA0000.jpg", id: "12345678" , id: "1050534361"},
+                    
+                ]
+            },
+            {
+                role: "GOLD LANER",
+                daftar: [
+                    { nama: "Renol", foto: "https://i.imgur.com/7ZbXyYb.jpg", id: "..." },
+                    
+                ]
+            },
+            {
+                role: "ROAMER",
+                daftar: [
+                    { nama: "...", foto: "https://i.imgur.com/7ZbXyYb.jpg", id: "..." },
+                    
+                ]
+            },
+            {
+                role: "EXP LANER",
+                daftar: [
+                    { nama: "...", foto: "https://i.imgur.com/7ZbXyYb.jpg", id: "..." },
+                    
+                ]
+            },
+            {
+                role: "MID LANER",
+                daftar: [
+                    { nama: "...", foto: "https://i.imgur.com/7ZbXyYb.jpg", id: "..." },
+                    
+                ]
+            }
+        ];
+
+        // === TAMPILAN AWAL ===
+        document.addEventListener('DOMContentLoaded', function () {
+            const tampilanAwal = document.getElementById('tampilan-awal');
+
+            dataAnggota.forEach(role => {
+                role.daftar.forEach(orang => {
+                    const kartu = document.createElement('div');
+                    kartu.className = "text-center group";
+                    kartu.innerHTML = `
+                        <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full overflow-hidden border-2 border-pink-500 shadow-lg mb-2 group-hover:scale-105 transition-all">
+                            <img src="${orang.foto}" alt="${orang.nama}" class="w-full h-full object-cover">
+                        </div>
+                        <p class="font-semibold text-white text-sm">${orang.nama}</p>
+                    `;
+                    tampilanAwal.appendChild(kartu);
+                });
+            });
+        });
+
+        // === FUNGSI TAMPILKAN ANGGOTA ===
+        function tampilkanAnggota(namaRole) {
+            const menuRole = document.getElementById('menu-role');
+            const daftarAnggota = document.getElementById('daftar-anggota');
+            const judulRole = document.getElementById('judul-role');
+            const wadahKartu = document.getElementById('wadah-kartu');
+
+            // Sembunyikan menu, tampilkan daftar
+            menuRole.classList.add('hidden');
+            daftarAnggota.classList.remove('hidden');
+
+            // Cari data
+            const dataDipilih = dataAnggota.find(item => item.role === namaRole);
+
+            judulRole.textContent = "ROLE : " + namaRole;
+            wadahKartu.innerHTML = '';
+
+            // Masukkan anggota
+            dataDipilih.daftar.forEach(orang => {
+                const kartu = document.createElement('div');
+                kartu.className = "bg-kartu border border-slate-700 rounded-xl overflow-hidden hover:scale-105 hover:border-pink-500 hover:shadow-lg transition-all duration-300 text-center p-4";
+                kartu.innerHTML = `
+                    <div class="w-full aspect-square rounded-lg overflow-hidden mb-4">
+                        <img src="${orang.foto}" alt="${orang.nama}" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">${orang.nama}</h3>
+                    <p class="text-pink-400 font-semibold">ID: ${orang.id}</p>
+                `;
+                wadahKartu.appendChild(kartu);
+            });
+        }
+
+        // === FUNGSI KEMBALI ===
+        function kembaliKeMenu() {
+            document.getElementById('daftar-anggota').classList.add('hidden');
+            document.getElementById('menu-role').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
